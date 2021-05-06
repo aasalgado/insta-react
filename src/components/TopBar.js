@@ -163,18 +163,19 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
+      {/* <AppBar position="static" style={{backgroundColor: 'rgb(255, 255, 255)'}}> */}
       <AppBar position="static">
-        <Toolbar>
-          <IconButton
+        <Toolbar style={{'padding': '0 10% 0 10%', 'justify-content': 'space-between'}}>
+          {/* <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
             aria-label="open drawer"
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            InstaReact
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -189,7 +190,7 @@ export default function PrimarySearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
-          <div className={classes.grow} />
+          {/* <div className={classes.grow} /> */}
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={4} color="secondary">
